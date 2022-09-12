@@ -35,7 +35,7 @@ contract LotteryV2 is LotteryV1 {
             winningTicketId
         ];
         payable(surpriseWinner.addr).transfer(deposits / 2);
-        console.log("Surprise winner: ", surpriseWinner.addr);
+        console.log("Surprise winner:------", surpriseWinner.addr);
         surpriseWinnerSelected = true;
         deposits = deposits / 2;
         delete ticketIdToParticipant[winningTicketId];
@@ -55,7 +55,7 @@ contract LotteryV2 is LotteryV1 {
             emit log(winningTicketIndex, winningTicketId);
             Participant memory winner = ticketIdToParticipant[winningTicketId];
             payable(winner.addr).transfer(deposits);
-            console.log("Winner: ", winner.addr);
+            console.log("Winner:---------------", winner.addr);
             emit End(winningTicketId, winner.addr, deposits);
         } else {
             emit End(0, address(0), deposits);

@@ -1,12 +1,9 @@
 //test for the upgrade
-const { ethers, upgrades } = require("hardhat");
+const { ethers } = require("hardhat");
 const chai = require("chai");
 const expect = chai.expect;
-const assert = chai.assert;
-var chaiAsPromised = require("chai-as-promised");
-chai.use(chaiAsPromised);
 
-describe.skip("Tests for upgrading implementation", function() {
+describe("Tests for upgrading implementation", function() {
 
   let lotteryV1, proxy, lotteryBeacon, ticket, lotteryFactory, owner, addr1, addr2;
   
@@ -29,7 +26,7 @@ describe.skip("Tests for upgrading implementation", function() {
     lotteryFactory = await LotteryFactory.deploy(lotteryV1.address);
     await lotteryFactory.deployed();
 
-    await lotteryFactory.buildLottery(101, ticket.address, 0);
+    await lotteryFactory.buildLottery(123, ethers.utils.parseEther("1"), ticket.address, 0); //123 is salt, 1 is deposit requirement
     const lotteryProxyAddress = await lotteryFactory.lotteries(0);
   
     proxy = await hre.ethers.getContractAt("LotteryV1", lotteryProxyAddress, owner);

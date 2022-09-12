@@ -1,9 +1,8 @@
 //tests for Ticket contract
-
 const { ethers, upgrades } = require("hardhat");
 const { expect } = require("chai");
 
-describe.skip('Tests for Ticket.sol', () => {
+describe('Tests for Ticket.sol', () => {
 
   let Ticket, ticket, owner, addr1, addr2;
   beforeEach("get contracts", async function () {

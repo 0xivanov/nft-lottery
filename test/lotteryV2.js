@@ -32,23 +32,23 @@ describe("Tests for LotteryV2.sol", function() {
     const beaconAddress = await lotteryFactory.beacon();
     lotteryBeacon = await hre.ethers.getContractAt("LotteryBeacon", beaconAddress);
 
-    await lotteryFactory.buildLottery(101, ticket.address, 0);
+    await lotteryFactory.buildLottery(123, ethers.utils.parseEther("2"), ticket.address, 0); // 123 is salt, 2 is deposit requirement
     lotteryProxyAddress = await lotteryFactory.lotteries(0);
 
   })
 
   
-  it.skip('V1 Fails when ending', async function () {
+  it('V1 Fails when ending', async function () {
     proxy = await hre.ethers.getContractAt("LotteryV1", lotteryProxyAddress, owner);
-    await proxy.triggerStart(15); //15 seconds
+    await proxy.triggerStart(15); //15 seconds after the start lottery can be ended
 
     await ticket.mint();
     await ticket.connect(addr1).mint();
     await ticket.connect(addr2).mint();
   
-    await proxy.deposit(ticket.address, 1, { value: ethers.utils.parseEther("0.5") });
-    await proxy.connect(addr1).deposit(ticket.address, 2, { value: ethers.utils.parseEther("0.5") });
-    await proxy.connect(addr2).deposit(ticket.address, 3, { value: ethers.utils.parseEther("0.5") });
+    await proxy.depositFunds(ticket.address, 1, { value: ethers.utils.parseEther("2") });
+    await proxy.connect(addr1).depositFunds(ticket.address, 2, { value: ethers.utils.parseEther("2") });
+    await proxy.connect(addr2).depositFunds(ticket.address, 3, { value: ethers.utils.parseEther("2") });
     await proxy.selectSurpriseWinner();
   
     let timeout = new Promise(function(resolve) {
@@ -56,13 +56,15 @@ describe("Tests for LotteryV2.sol", function() {
     });
     await timeout;
     assert.isRejected(proxy.triggerEnd());
+
+    await proxy.forceEnd();
   });
 
   it('Upgrades and fixes V1 problem', async function () {
 
     let initial = BigInt(await owner.getBalance()) + BigInt(await addr1.getBalance()) + BigInt(await addr2.getBalance());
     initial = initial.toString().substring(0,4);
-    console.log("Signers:  ", owner.address, addr1.address, addr2.address);
+    console.log("Signers:--------------", owner.address, addr1.address, addr2.address);
 
     await lotteryBeacon.update(lotteryV2.address);
     const lotteryProxyAddress = await lotteryFactory.lotteries(0);
@@ -70,16 +72,16 @@ describe("Tests for LotteryV2.sol", function() {
     const text = await proxy.upgradeChecker();
     expect(text === "Im new impl");
 
-    await proxy.triggerStart(15); //15 seconds
+    await proxy.triggerStart(15); //15 seconds after the start lottery can be ended
     await ticket.mint();
     await ticket.connect(addr1).mint();
     await ticket.connect(addr2).mint();
   
-    await proxy.deposit(ticket.address, 1, { value: ethers.utils.parseEther("300") });
-    await proxy.connect(addr1).deposit(ticket.address, 2, { value: ethers.utils.parseEther("200") });
-    await proxy.connect(addr2).deposit(ticket.address, 3, { value: ethers.utils.parseEther("100") });
+    await proxy.depositFunds(ticket.address, 1, { value: ethers.utils.parseEther("2") });
+    await proxy.connect(addr1).depositFunds(ticket.address, 2, { value: ethers.utils.parseEther("2") });
+    await proxy.connect(addr2).depositFunds(ticket.address, 3, { value: ethers.utils.parseEther("2") });
     await proxy.selectSurpriseWinner();
-    console.log("After surprise winner:  ",ethers.utils.formatEther(await owner.getBalance())
+    console.log("After surprise winner:",ethers.utils.formatEther(await owner.getBalance())
                 ,ethers.utils.formatEther(await addr1.getBalance())
                 ,ethers.utils.formatEther(await addr2.getBalance()));
 
@@ -89,7 +91,7 @@ describe("Tests for LotteryV2.sol", function() {
     await timeout;
     await proxy.triggerEnd();
 
-    console.log("After final winner:   ", ethers.utils.formatEther(await owner.getBalance())
+    console.log("After final winner:---", ethers.utils.formatEther(await owner.getBalance())
     ,ethers.utils.formatEther(await addr1.getBalance())
     ,ethers.utils.formatEther(await addr2.getBalance()));
 
@@ -101,20 +103,24 @@ describe("Tests for LotteryV2.sol", function() {
   
   it('Makes second iteration of the V2', async function () {
 
+    //change deposti requirement
+    await proxy.changeDepositReq(ethers.utils.parseEther("11"));
+
     let initial = BigInt(await owner.getBalance()) + BigInt(await addr1.getBalance()) + BigInt(await addr2.getBalance());
     initial = initial.toString().substring(0,4);
-    console.log("Signers:  ", owner.address, addr1.address, addr2.address);
+    console.log("Signers:--------------", owner.address, addr1.address, addr2.address);
+    console.log("depositFundss:-------------", 400, 2, 30);
 
-    await proxy.triggerStart(15); //15 seconds
+    await proxy.triggerStart(15); //15 seconds after the start lottery can be ended
     await ticket.mint();
     await ticket.connect(addr1).mint();
     await ticket.connect(addr2).mint();
   
-    await proxy.deposit(ticket.address, 1, { value: ethers.utils.parseEther("432") });
-    await proxy.connect(addr1).deposit(ticket.address, 5, { value: ethers.utils.parseEther("2") });
-    await proxy.connect(addr2).deposit(ticket.address, 6, { value: ethers.utils.parseEther("2.1") });
+    await proxy.depositFunds(ticket.address, 1, { value: ethers.utils.parseEther("11") });
+    await proxy.connect(addr1).depositFunds(ticket.address, 5, { value: ethers.utils.parseEther("11") });
+    await proxy.connect(addr2).depositFunds(ticket.address, 6, { value: ethers.utils.parseEther("11") });
     await proxy.selectSurpriseWinner();
-    console.log("After surprise winner:  ",ethers.utils.formatEther(await owner.getBalance())
+    console.log("After surprise winner:",ethers.utils.formatEther(await owner.getBalance())
                 ,ethers.utils.formatEther(await addr1.getBalance())
                 ,ethers.utils.formatEther(await addr2.getBalance()));
 
@@ -124,7 +130,7 @@ describe("Tests for LotteryV2.sol", function() {
     await timeout;
     await proxy.triggerEnd();
 
-    console.log("After final winner:   ", ethers.utils.formatEther(await owner.getBalance())
+    console.log("After final winner:---", ethers.utils.formatEther(await owner.getBalance())
     ,ethers.utils.formatEther(await addr1.getBalance())
     ,ethers.utils.formatEther(await addr2.getBalance()));
 
