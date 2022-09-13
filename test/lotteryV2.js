@@ -63,8 +63,11 @@ describe("Tests for LotteryV2.sol", function() {
   it('Upgrades and fixes V1 problem', async function () {
 
     let initial = BigInt(await owner.getBalance()) + BigInt(await addr1.getBalance()) + BigInt(await addr2.getBalance());
-    initial = initial.toString().substring(0,4);
+    initial = initial.toString().substring(0,8);
     console.log("Signers:--------------", owner.address, addr1.address, addr2.address);
+    console.log("Initial values:-------", ethers.utils.formatEther(await owner.getBalance())
+    ,ethers.utils.formatEther(await addr1.getBalance())
+    ,ethers.utils.formatEther(await addr2.getBalance()));
 
     await lotteryBeacon.update(lotteryV2.address);
     const lotteryProxyAddress = await lotteryFactory.lotteries(0);
@@ -96,7 +99,7 @@ describe("Tests for LotteryV2.sol", function() {
     ,ethers.utils.formatEther(await addr2.getBalance()));
 
     let final = BigInt(await owner.getBalance()) + BigInt(await addr1.getBalance()) + BigInt(await addr2.getBalance());
-    final = final.toString().substring(0,4);
+    final = final.toString().substring(0,8);
 
     expect(initial === final);
   });
@@ -107,8 +110,11 @@ describe("Tests for LotteryV2.sol", function() {
     await proxy.changeDepositReq(ethers.utils.parseEther("11"));
 
     let initial = BigInt(await owner.getBalance()) + BigInt(await addr1.getBalance()) + BigInt(await addr2.getBalance());
-    initial = initial.toString().substring(0,4);
+    initial = initial.toString().substring(0,8);
     console.log("Signers:--------------", owner.address, addr1.address, addr2.address);
+    console.log("Initial values:-------", ethers.utils.formatEther(await owner.getBalance())
+    ,ethers.utils.formatEther(await addr1.getBalance())
+    ,ethers.utils.formatEther(await addr2.getBalance()));
 
     await proxy.triggerStart(15); //15 seconds after the start lottery can be ended
     await ticket.mint();
@@ -134,7 +140,7 @@ describe("Tests for LotteryV2.sol", function() {
     ,ethers.utils.formatEther(await addr2.getBalance()));
 
     let final = BigInt(await owner.getBalance()) + BigInt(await addr1.getBalance()) + BigInt(await addr2.getBalance());
-    final = final.toString().substring(0,4);
+    final = final.toString().substring(0,8);
 
     expect(initial === final);
   });
