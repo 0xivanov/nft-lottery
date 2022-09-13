@@ -1,8 +1,8 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/home/iivanov/projects/nexo/nft-lottery/contracts/LotteryBeacon.sol": {
-      "lastModificationDate": 1662995944761,
+    "C:\\Users\\i.ivanov\\Desktop\\nft-lottery\\contracts\\LotteryBeacon.sol": {
+      "lastModificationDate": 1662886934524,
       "contentHash": "a428133d220210dfde593176448f809d",
       "sourceName": "contracts/LotteryBeacon.sol",
       "solcConfig": {
@@ -39,8 +39,8 @@
         "LotteryBeacon"
       ]
     },
-    "/home/iivanov/projects/nexo/nft-lottery/node_modules/@openzeppelin/contracts/proxy/beacon/UpgradeableBeacon.sol": {
-      "lastModificationDate": 1662996004471,
+    "C:\\Users\\i.ivanov\\Desktop\\nft-lottery\\node_modules\\@openzeppelin\\contracts\\proxy\\beacon\\UpgradeableBeacon.sol": {
+      "lastModificationDate": 1663049649636,
       "contentHash": "8ffefb755605824cf730ce4092b2f581",
       "sourceName": "@openzeppelin/contracts/proxy/beacon/UpgradeableBeacon.sol",
       "solcConfig": {
@@ -79,8 +79,44 @@
         "UpgradeableBeacon"
       ]
     },
-    "/home/iivanov/projects/nexo/nft-lottery/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
-      "lastModificationDate": 1662996003244,
+    "C:\\Users\\i.ivanov\\Desktop\\nft-lottery\\node_modules\\@openzeppelin\\contracts\\proxy\\beacon\\IBeacon.sol": {
+      "lastModificationDate": 1663049649276,
+      "contentHash": "b6bd23bf19e90b771337037706470933",
+      "sourceName": "@openzeppelin/contracts/proxy/beacon/IBeacon.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IBeacon"
+      ]
+    },
+    "C:\\Users\\i.ivanov\\Desktop\\nft-lottery\\node_modules\\@openzeppelin\\contracts\\access\\Ownable.sol": {
+      "lastModificationDate": 1663049649496,
       "contentHash": "e436cea06129be2c73cda4b1acc848b5",
       "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
       "solcConfig": {
@@ -117,8 +153,8 @@
         "Ownable"
       ]
     },
-    "/home/iivanov/projects/nexo/nft-lottery/node_modules/@openzeppelin/contracts/utils/Address.sol": {
-      "lastModificationDate": 1662996003244,
+    "C:\\Users\\i.ivanov\\Desktop\\nft-lottery\\node_modules\\@openzeppelin\\contracts\\utils\\Address.sol": {
+      "lastModificationDate": 1663049644388,
       "contentHash": "c476b3895a94798b88a4bb97399e6dfe",
       "sourceName": "@openzeppelin/contracts/utils/Address.sol",
       "solcConfig": {
@@ -153,44 +189,8 @@
         "Address"
       ]
     },
-    "/home/iivanov/projects/nexo/nft-lottery/node_modules/@openzeppelin/contracts/proxy/beacon/IBeacon.sol": {
-      "lastModificationDate": 1662996004471,
-      "contentHash": "b6bd23bf19e90b771337037706470933",
-      "sourceName": "@openzeppelin/contracts/proxy/beacon/IBeacon.sol",
-      "solcConfig": {
-        "version": "0.8.9",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "IBeacon"
-      ]
-    },
-    "/home/iivanov/projects/nexo/nft-lottery/node_modules/@openzeppelin/contracts/utils/Context.sol": {
-      "lastModificationDate": 1662996003248,
+    "C:\\Users\\i.ivanov\\Desktop\\nft-lottery\\node_modules\\@openzeppelin\\contracts\\utils\\Context.sol": {
+      "lastModificationDate": 1663049644416,
       "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
       "sourceName": "@openzeppelin/contracts/utils/Context.sol",
       "solcConfig": {
@@ -225,8 +225,8 @@
         "Context"
       ]
     },
-    "/home/iivanov/projects/nexo/nft-lottery/contracts/LotteryFactory.sol": {
-      "lastModificationDate": 1663007556344,
+    "C:\\Users\\i.ivanov\\Desktop\\nft-lottery\\contracts\\LotteryFactory.sol": {
+      "lastModificationDate": 1663049578366,
       "contentHash": "3b1fe0d2336cdfa157108b47f26fe181",
       "sourceName": "contracts/LotteryFactory.sol",
       "solcConfig": {
@@ -266,8 +266,8 @@
         "LotteryFactory"
       ]
     },
-    "/home/iivanov/projects/nexo/nft-lottery/contracts/LotteryV1.sol": {
-      "lastModificationDate": 1663007579344,
+    "C:\\Users\\i.ivanov\\Desktop\\nft-lottery\\contracts\\LotteryV1.sol": {
+      "lastModificationDate": 1663049578376,
       "contentHash": "e017fe508a8edd92ddd6f7c5df3515cf",
       "sourceName": "contracts/LotteryV1.sol",
       "solcConfig": {
@@ -308,8 +308,46 @@
         "LotteryV1"
       ]
     },
-    "/home/iivanov/projects/nexo/nft-lottery/node_modules/@openzeppelin/contracts/proxy/beacon/BeaconProxy.sol": {
-      "lastModificationDate": 1662996004471,
+    "C:\\Users\\i.ivanov\\Desktop\\nft-lottery\\contracts\\LotteryV2.sol": {
+      "lastModificationDate": 1663049578386,
+      "contentHash": "1772982aa7c0b74d743fc1badf75044d",
+      "sourceName": "contracts/LotteryV2.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./LotteryV1.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "LotteryV2"
+      ]
+    },
+    "C:\\Users\\i.ivanov\\Desktop\\nft-lottery\\node_modules\\@openzeppelin\\contracts\\proxy\\beacon\\BeaconProxy.sol": {
+      "lastModificationDate": 1663049644396,
       "contentHash": "dc9dcb6e542154d9cfbfaece646c1092",
       "sourceName": "@openzeppelin/contracts/proxy/beacon/BeaconProxy.sol",
       "solcConfig": {
@@ -348,8 +386,8 @@
         "BeaconProxy"
       ]
     },
-    "/home/iivanov/projects/nexo/nft-lottery/contracts/Ticket.sol": {
-      "lastModificationDate": 1662995944761,
+    "C:\\Users\\i.ivanov\\Desktop\\nft-lottery\\contracts\\Ticket.sol": {
+      "lastModificationDate": 1662886887471,
       "contentHash": "bb9c292352677afd6784340efe2866d2",
       "sourceName": "contracts/Ticket.sol",
       "solcConfig": {
@@ -387,44 +425,8 @@
         "Ticket"
       ]
     },
-    "/home/iivanov/projects/nexo/nft-lottery/node_modules/hardhat/console.sol": {
-      "lastModificationDate": 1662996002120,
-      "contentHash": "4ff3cd2f6272c9a6516e9ee4f2b967d3",
-      "sourceName": "hardhat/console.sol",
-      "solcConfig": {
-        "version": "0.8.9",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">= 0.4.22 <0.9.0"
-      ],
-      "artifacts": [
-        "console"
-      ]
-    },
-    "/home/iivanov/projects/nexo/nft-lottery/node_modules/@openzeppelin/contracts/utils/Counters.sol": {
-      "lastModificationDate": 1662996003248,
+    "C:\\Users\\i.ivanov\\Desktop\\nft-lottery\\node_modules\\@openzeppelin\\contracts\\utils\\Counters.sol": {
+      "lastModificationDate": 1663049644416,
       "contentHash": "74654e3ae5d7f39555055dfe244dab7a",
       "sourceName": "@openzeppelin/contracts/utils/Counters.sol",
       "solcConfig": {
@@ -459,8 +461,80 @@
         "Counters"
       ]
     },
-    "/home/iivanov/projects/nexo/nft-lottery/node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol": {
-      "lastModificationDate": 1662996004471,
+    "C:\\Users\\i.ivanov\\Desktop\\nft-lottery\\node_modules\\@openzeppelin\\contracts\\utils\\Strings.sol": {
+      "lastModificationDate": 1663049649616,
+      "contentHash": "cf46906c4035f51639a22265066a9e78",
+      "sourceName": "@openzeppelin/contracts/utils/Strings.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Strings"
+      ]
+    },
+    "C:\\Users\\i.ivanov\\Desktop\\nft-lottery\\node_modules\\hardhat\\console.sol": {
+      "lastModificationDate": 1662791661211,
+      "contentHash": "4ff3cd2f6272c9a6516e9ee4f2b967d3",
+      "sourceName": "hardhat/console.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">= 0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
+      ]
+    },
+    "C:\\Users\\i.ivanov\\Desktop\\nft-lottery\\node_modules\\@openzeppelin\\contracts\\token\\ERC721\\ERC721.sol": {
+      "lastModificationDate": 1663049649126,
       "contentHash": "79ff1a7eb801a525aa315fb7a679eede",
       "sourceName": "@openzeppelin/contracts/token/ERC721/ERC721.sol",
       "solcConfig": {
@@ -503,154 +577,8 @@
         "ERC721"
       ]
     },
-    "/home/iivanov/projects/nexo/nft-lottery/node_modules/@chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol": {
-      "lastModificationDate": 1662996004040,
-      "contentHash": "eb9cc526ef59dfc4d644f56ddca0633a",
-      "sourceName": "@chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol",
-      "solcConfig": {
-        "version": "0.8.9",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.4"
-      ],
-      "artifacts": [
-        "VRFConsumerBaseV2"
-      ]
-    },
-    "/home/iivanov/projects/nexo/nft-lottery/node_modules/@chainlink/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol": {
-      "lastModificationDate": 1662996004803,
-      "contentHash": "56ec852a2aeddf81bf5a5720a7fc6a63",
-      "sourceName": "@chainlink/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol",
-      "solcConfig": {
-        "version": "0.8.9",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "VRFCoordinatorV2Interface"
-      ]
-    },
-    "/home/iivanov/projects/nexo/nft-lottery/node_modules/@openzeppelin/contracts/utils/Strings.sol": {
-      "lastModificationDate": 1662996003248,
-      "contentHash": "cf46906c4035f51639a22265066a9e78",
-      "sourceName": "@openzeppelin/contracts/utils/Strings.sol",
-      "solcConfig": {
-        "version": "0.8.9",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "Strings"
-      ]
-    },
-    "/home/iivanov/projects/nexo/nft-lottery/node_modules/@openzeppelin/contracts/token/ERC721/IERC721.sol": {
-      "lastModificationDate": 1662996004471,
-      "contentHash": "ec99d946db3685a3630554aa6055bd7f",
-      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
-      "solcConfig": {
-        "version": "0.8.9",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "../../utils/introspection/IERC165.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "IERC721"
-      ]
-    },
-    "/home/iivanov/projects/nexo/nft-lottery/node_modules/@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol": {
-      "lastModificationDate": 1662996004471,
+    "C:\\Users\\i.ivanov\\Desktop\\nft-lottery\\node_modules\\@openzeppelin\\contracts\\token\\ERC721\\IERC721Receiver.sol": {
+      "lastModificationDate": 1663049649406,
       "contentHash": "c22d4395e33763de693fd440c6fd10e1",
       "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
       "solcConfig": {
@@ -685,8 +613,8 @@
         "IERC721Receiver"
       ]
     },
-    "/home/iivanov/projects/nexo/nft-lottery/node_modules/@openzeppelin/contracts/utils/introspection/ERC165.sol": {
-      "lastModificationDate": 1662996004479,
+    "C:\\Users\\i.ivanov\\Desktop\\nft-lottery\\node_modules\\@openzeppelin\\contracts\\utils\\introspection\\ERC165.sol": {
+      "lastModificationDate": 1663049644531,
       "contentHash": "0e7db055ce108f9da7bb6686a00287c0",
       "sourceName": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
       "solcConfig": {
@@ -723,8 +651,46 @@
         "ERC165"
       ]
     },
-    "/home/iivanov/projects/nexo/nft-lottery/node_modules/@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol": {
-      "lastModificationDate": 1662996004835,
+    "C:\\Users\\i.ivanov\\Desktop\\nft-lottery\\node_modules\\@openzeppelin\\contracts\\token\\ERC721\\IERC721.sol": {
+      "lastModificationDate": 1663049649390,
+      "contentHash": "ec99d946db3685a3630554aa6055bd7f",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721"
+      ]
+    },
+    "C:\\Users\\i.ivanov\\Desktop\\nft-lottery\\node_modules\\@openzeppelin\\contracts\\token\\ERC721\\extensions\\IERC721Metadata.sol": {
+      "lastModificationDate": 1663049649406,
       "contentHash": "efbc0d15b80a74e34dbe8da0f3e879bb",
       "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol",
       "solcConfig": {
@@ -761,8 +727,8 @@
         "IERC721Metadata"
       ]
     },
-    "/home/iivanov/projects/nexo/nft-lottery/node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol": {
-      "lastModificationDate": 1662996004479,
+    "C:\\Users\\i.ivanov\\Desktop\\nft-lottery\\node_modules\\@openzeppelin\\contracts\\utils\\introspection\\IERC165.sol": {
+      "lastModificationDate": 1663049649341,
       "contentHash": "03e6768535ac4da0e9756f1d8a4a018a",
       "sourceName": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
       "solcConfig": {
@@ -797,8 +763,8 @@
         "IERC165"
       ]
     },
-    "/home/iivanov/projects/nexo/nft-lottery/node_modules/@openzeppelin/contracts/proxy/Proxy.sol": {
-      "lastModificationDate": 1662996003244,
+    "C:\\Users\\i.ivanov\\Desktop\\nft-lottery\\node_modules\\@openzeppelin\\contracts\\proxy\\Proxy.sol": {
+      "lastModificationDate": 1663049649571,
       "contentHash": "40b3d81a836d50ff47e03893dcaaf204",
       "sourceName": "@openzeppelin/contracts/proxy/Proxy.sol",
       "solcConfig": {
@@ -833,8 +799,8 @@
         "Proxy"
       ]
     },
-    "/home/iivanov/projects/nexo/nft-lottery/node_modules/@openzeppelin/contracts/proxy/ERC1967/ERC1967Upgrade.sol": {
-      "lastModificationDate": 1662996004471,
+    "C:\\Users\\i.ivanov\\Desktop\\nft-lottery\\node_modules\\@openzeppelin\\contracts\\proxy\\ERC1967\\ERC1967Upgrade.sol": {
+      "lastModificationDate": 1663049644556,
       "contentHash": "6baa887a798e95b14f34e093f117e9b2",
       "sourceName": "@openzeppelin/contracts/proxy/ERC1967/ERC1967Upgrade.sol",
       "solcConfig": {
@@ -874,44 +840,8 @@
         "ERC1967Upgrade"
       ]
     },
-    "/home/iivanov/projects/nexo/nft-lottery/node_modules/@openzeppelin/contracts/utils/StorageSlot.sol": {
-      "lastModificationDate": 1662996003248,
-      "contentHash": "f993f8f50186952a59ee5e3a30b68222",
-      "sourceName": "@openzeppelin/contracts/utils/StorageSlot.sol",
-      "solcConfig": {
-        "version": "0.8.9",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "StorageSlot"
-      ]
-    },
-    "/home/iivanov/projects/nexo/nft-lottery/node_modules/@openzeppelin/contracts/interfaces/draft-IERC1822.sol": {
-      "lastModificationDate": 1662996003244,
+    "C:\\Users\\i.ivanov\\Desktop\\nft-lottery\\node_modules\\@openzeppelin\\contracts\\interfaces\\draft-IERC1822.sol": {
+      "lastModificationDate": 1663049644476,
       "contentHash": "2858d98e74e67987ec81b39605230b74",
       "sourceName": "@openzeppelin/contracts/interfaces/draft-IERC1822.sol",
       "solcConfig": {
@@ -946,48 +876,10 @@
         "IERC1822Proxiable"
       ]
     },
-    "/home/iivanov/projects/nexo/nft-lottery/contracts/LotteryV2.sol": {
-      "lastModificationDate": 1662997193581,
-      "contentHash": "1772982aa7c0b74d743fc1badf75044d",
-      "sourceName": "contracts/LotteryV2.sol",
-      "solcConfig": {
-        "version": "0.8.9",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "./LotteryV1.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.9"
-      ],
-      "artifacts": [
-        "LotteryV2"
-      ]
-    },
-    "/home/iivanov/projects/nexo/nft-lottery/node_modules/@openzeppelin/contracts/utils/Create2.sol": {
-      "lastModificationDate": 1662996003248,
-      "contentHash": "8932e2855e9aac6e79af79e499863b10",
-      "sourceName": "@openzeppelin/contracts/utils/Create2.sol",
+    "C:\\Users\\i.ivanov\\Desktop\\nft-lottery\\node_modules\\@openzeppelin\\contracts\\utils\\StorageSlot.sol": {
+      "lastModificationDate": 1663049649616,
+      "contentHash": "f993f8f50186952a59ee5e3a30b68222",
+      "sourceName": "@openzeppelin/contracts/utils/StorageSlot.sol",
       "solcConfig": {
         "version": "0.8.9",
         "settings": {
@@ -1017,7 +909,7 @@
         "^0.8.0"
       ],
       "artifacts": [
-        "Create2"
+        "StorageSlot"
       ]
     }
   }
