@@ -109,7 +109,6 @@ describe("Tests for LotteryV2.sol", function() {
     let initial = BigInt(await owner.getBalance()) + BigInt(await addr1.getBalance()) + BigInt(await addr2.getBalance());
     initial = initial.toString().substring(0,4);
     console.log("Signers:--------------", owner.address, addr1.address, addr2.address);
-    console.log("depositFundss:-------------", 400, 2, 30);
 
     await proxy.triggerStart(15); //15 seconds after the start lottery can be ended
     await ticket.mint();
