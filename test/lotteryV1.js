@@ -6,7 +6,7 @@ const assert = chai.assert;
 var chaiAsPromised = require("chai-as-promised");
 chai.use(chaiAsPromised);
 
-describe.skip("Tests for LotteryV1.sol", function() {
+describe("Tests for LotteryV1.sol", function() {
 
   let lotteryV1, lotteryV1Proxy, ticket, lotteryFactory, owner, addr1, addr2;
   
